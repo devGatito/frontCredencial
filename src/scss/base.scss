@@ -1,0 +1,87 @@
+@use "sass:map";
+
+:root {
+	scroll-behavior: smooth;
+	--db-base-color: white;
+	--font-family-main: "Lato";
+	--db-title-face: "Lato", sans-serif;
+	--db-line-height: 1.4;
+	--db-small-relative: 80%;
+	--db-height-elements: 45px;
+
+	/*
+  * Definen el porcentaje o medida en pixeles a restar del 100%
+  * de la pantalla para establecer el limite de container: .flex:wrapper
+  */
+	--db-wrap-m: 5%;
+	--db-wrap-tb: 10%;
+	--db-wrap-l: 15%;
+	--db-wrap-d: 20%;
+	--db-wrap-hd: 20%;
+	--db-wrap-w: 30%;
+
+	//Tamaños de texto para diferentes resoluciones
+	--db-font-base: 16px;
+	--db-size-xs: 10px;
+	--db-size-sm: 12px;
+	--db-size-md: 18px;
+	--db-size-lg: 24px;
+	--db-size-tl: 36px;
+	--db-size-jb: 44px;
+	--db-size-hr: 60px;
+	--db-size-mg: 120px;
+
+	//radius
+	--db-radius-sm: 4px;
+	--db-radius-md: 12px;
+	--db-radius-lg: 18px;
+	--db-radius-fluid: 50px;
+
+	// ajustes de media queries
+	--db-breakpoint-m: 320px;
+	--db-breakpoint-tb: 765px;
+	--db-breakpoint-l: 1020px;
+	--db-breakpoint-d: 1360px; // cuidar mucho la maquetacion aqui
+	--db-breakpoint-hd: 1430px;
+	--db-breakpoint-w: 1910px;
+
+	// tamaño de boton de whatsApp
+	--db-whatsapp-size: 60px;
+	--db-whatsapp-size-icon: 36px;
+}
+
+//Tema de los componentes CSS
+$primary: #0e4345;
+$secondary: #f3efe4;
+$white: #ffffff;
+$black: #000000;
+$smoke: #f6f6f6;
+$dark: #404040;
+$gray: #717d7d;
+
+//Colores de estado para elmentos input, etc.
+$state-danger: #c51533;
+$state-warning: #000000;
+$state-info: #157bc5;
+$state-success: #00c850;
+
+// @import "dbgrid/scss/lib";
+@import "./whatsapp";
+@import "./inputs";
+@import "./modal";
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+*::-webkit-scrollbar-track {
+	background: #fff;
+}
+*::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border: 2px solid white;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: black;
+}
+
+@include create-color-palette($colors, $tones);

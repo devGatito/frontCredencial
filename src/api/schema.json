@@ -1,0 +1,22 @@
+{
+	"version": 1.0,
+	"data": {
+		"privacy": {
+			"enabled": true,
+			"button": "Aceptar aviso de privacidad",
+			"link": "https://www.credencial.com.mx/aviso-de-privacidad",
+			"legal": "Acepta el aviso de privacidad para continuar"
+		},
+		"promotion": {
+			"enabled": true,
+			"image": "https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"button": "¡Quiero la promo!",
+			"legal": "Al dar click aceptas nuestros términos y condiciones"
+		},
+		"whatsapp": {
+			"enabled": true,
+			"button": "¡Quiero la promo!",
+			"legal": "Al dar click aceptas nuestros términos y condiciones"
+		}
+	}
+}
